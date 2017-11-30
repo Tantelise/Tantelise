@@ -1,0 +1,34 @@
+spring:
+  data:
+    mongodb:
+      host: "localhost"
+      port: "27017"
+      database: "usuarios"
+  application:
+    name: "UsuariosAutenticacionService"
+    
+server:
+  port: 0
+  
+logging:
+  level:
+    org.springframework.web: trace
+    org.hibernate: trace
+    
+  
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      user-info-uri: "http://localhost:${server.port}/usuarios/info"
+      
+eureka:
+  client:
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    statusPageUrlPath: /swagger-ui.html
+  

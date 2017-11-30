@@ -16,3 +16,10 @@ eureka:
       defaultZone: http://localhost:8080/eureka/
   instance:
     statusPageUrlPath: /swagger-ui.html
+    
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      user-info-uri: "http://localhost:8081/usuarios/info"

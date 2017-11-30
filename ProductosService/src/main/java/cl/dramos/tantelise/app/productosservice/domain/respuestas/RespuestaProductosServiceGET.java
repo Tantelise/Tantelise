@@ -6,8 +6,8 @@ import cl.dramos.tantelise.app.productosservice.domain.Producto;
 
 public class RespuestaProductosServiceGET {
 	
-	List<Producto> productos;
-	long cantidadResultados;
+	private List<Producto> productos;
+	int cantidadResultados;
 	
 	public List<Producto> getProductos() {
 		return productos;
@@ -18,7 +18,7 @@ public class RespuestaProductosServiceGET {
 	public long getCantidadResultados() {
 		return cantidadResultados;
 	}
-	public void setCantidadResultados(long cantidadResultados) {
+	public void setCantidadResultados(int cantidadResultados) {
 		this.cantidadResultados = cantidadResultados;
 	}
 	

@@ -14,8 +14,6 @@ public interface ServicioService {
 
 	public ResponseEntity<RespuestaServiciosGET> obtenerServicioPorId(String id);
 
-	public ResponseEntity<RespuestaServiciosGET> obtenerServicioPorNombre(String nombre);
-
 	public ResponseEntity<RespuestaServiciosPOST> crearServicio(Servicio servicio);
 
 	public ResponseEntity<RespuestaServiciosPUT> actualizarServicio(Servicio servicio);

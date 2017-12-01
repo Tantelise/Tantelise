@@ -3,7 +3,6 @@ package cl.dramos.tantelise.app.productosservice.domain.respuestas;
 import java.util.List;
 
 import cl.dramos.tantelise.app.productosservice.domain.DetalleAdicional;
-import cl.dramos.tantelise.app.productosservice.domain.Producto;
 
 public class RespuestaDetalleAdicionalServiceGET {
 	

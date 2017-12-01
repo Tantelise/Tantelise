@@ -23,7 +23,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("productos")
+@RequestMapping(path = "productos",produces = "application/json")
 @Api(value="Productos API", description="Operaciones relacionadas a los productos")
 public class ProductosController {
 	
@@ -31,25 +31,25 @@ public class ProductosController {
 	private ProductosService productosService;
 	
 	@ApiOperation(value = "Retorna una lista con todos los productos y sus estados")
-	@GetMapping(produces = "application/json")
+	@GetMapping()
 	public ResponseEntity<RespuestaProductosServiceGET> getProductos(){	
 		return productosService.buscarProductoLista();
 	}
 	
 	@ApiOperation(value="Crea un producto o lista de productos", consumes="application/json")
-	@PostMapping(path="", produces="application/json")
+	@PostMapping(path="")
 	public ResponseEntity<RespuestaProductosServicePOST> crearProducto(@RequestBody ArrayList<Producto> nuevoProducto) {
 		return productosService.crearProductoLista(nuevoProducto);
 	}
 	
 	@ApiOperation(value="Eliminar un producto por identificador")
-	@DeleteMapping(path="/{identificador}", produces="application/json")
+	@DeleteMapping(path="/{identificador}")
 	public ResponseEntity<RespuestaProductosServiceDELETE> eliminarProductoPorId(@PathVariable String identificador) {
 		return productosService.eliminarProducto(identificador);
 	}
 	
 	@ApiOperation(value="Actualizar un producto")
-	@PutMapping(path="{id}", produces ="application/json")
+	@PutMapping(path="{id}")
 	public ResponseEntity<RespuestaProductosServicePUT> actualizarProductoPorId(@RequestBody Producto productoPorActualizar) {
 		return productosService.actualizarProducto(productoPorActualizar);
 	}

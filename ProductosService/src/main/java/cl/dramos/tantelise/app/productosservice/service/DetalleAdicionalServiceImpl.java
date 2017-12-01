@@ -4,19 +4,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import cl.dramos.tantelise.app.productosservice.domain.DetalleAdicional;
 import cl.dramos.tantelise.app.productosservice.domain.DetalleAdicionalRepository;
-import cl.dramos.tantelise.app.productosservice.domain.Producto;
 import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaDetalleAdicionalServiceDELETE;
 import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaDetalleAdicionalServiceGET;
 import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaDetalleAdicionalServicePOST;
 import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaDetalleAdicionalServicePUT;
-import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaProductosServiceDELETE;
-import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaProductosServiceGET;
-import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaProductosServicePOST;
-import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaProductosServicePUT;
 
+
+@Service
 public class DetalleAdicionalServiceImpl implements DetalleAdicionalService{
 	
 	@Autowired 

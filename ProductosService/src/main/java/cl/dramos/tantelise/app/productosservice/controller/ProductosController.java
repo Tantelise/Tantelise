@@ -49,8 +49,8 @@ public class ProductosController {
 	}
 	
 	@ApiOperation(value="Actualizar un producto")
-	@PutMapping(path="{id}")
-	public ResponseEntity<RespuestaProductosServicePUT> actualizarProductoPorId(@RequestBody Producto productoPorActualizar) {
-		return productosService.actualizarProducto(productoPorActualizar);
+	@PutMapping(path="/{id}")
+	public ResponseEntity<RespuestaProductosServicePUT> actualizarProductoPorId(@PathVariable String id,@RequestBody Producto productoPorActualizar) {
+		return productosService.actualizarProducto(id, productoPorActualizar);
 	}
 }

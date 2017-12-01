@@ -13,7 +13,7 @@ public interface DetalleAdicionalService {
 	public ResponseEntity<RespuestaDetalleAdicionalServiceGET> obtenerDetalleAdicionalLista();
 	public ResponseEntity<RespuestaDetalleAdicionalServiceGET> obtenerDetalleAdicionalPorID(String id);
 	public ResponseEntity<RespuestaDetalleAdicionalServiceDELETE> eliminarDetalleAdicional(String id);
-	public ResponseEntity<RespuestaDetalleAdicionalServicePUT> actualizarDetalleAdicional(DetalleAdicional detalleAdicional);
+	public ResponseEntity<RespuestaDetalleAdicionalServicePUT> actualizarDetalleAdicional(String id, DetalleAdicional detalleAdicional);
 	public ResponseEntity<RespuestaDetalleAdicionalServicePOST> crearDetalleAdicional(DetalleAdicional detalleAdicional);
 
 

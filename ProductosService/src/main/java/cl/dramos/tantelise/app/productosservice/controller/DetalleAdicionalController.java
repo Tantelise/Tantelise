@@ -36,7 +36,7 @@ public class DetalleAdicionalController {
 	}
 	
 	@ApiOperation(value = "Retorna un servicio adicional según el id indicado")
-	@GetMapping("{identificador}")
+	@GetMapping("/{identificador}")
 	public ResponseEntity<RespuestaDetalleAdicionalServiceGET> getDetalleAdicionalPorId(@PathVariable String identificador){
 		return detalleAdicionalService.obtenerDetalleAdicionalPorID(identificador);
 	}
@@ -48,9 +48,9 @@ public class DetalleAdicionalController {
 	}
 	
 	@ApiOperation(value="Actualizar un servicio adicional")
-	@PutMapping(path="{id}")
-	public ResponseEntity<RespuestaDetalleAdicionalServicePUT> actualizarProductoPorId(@RequestBody DetalleAdicional detalleAdicional) {
-		return detalleAdicionalService.actualizarDetalleAdicional(detalleAdicional);
+	@PutMapping(path="/{id}")
+	public ResponseEntity<RespuestaDetalleAdicionalServicePUT> actualizarProductoPorId(@PathVariable String id, @RequestBody DetalleAdicional detalleAdicional) {
+		return detalleAdicionalService.actualizarDetalleAdicional(id,detalleAdicional);
 	}
 	
 	@ApiOperation(value="Crea un servicio adicional")

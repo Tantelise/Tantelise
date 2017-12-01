@@ -15,7 +15,7 @@ public interface ProductosService {
 	public ResponseEntity<RespuestaProductosServiceGET> buscarProductoLista();
 	public ResponseEntity<RespuestaProductosServiceGET> buscarProductoPorId(String productoId);
 	public ResponseEntity<RespuestaProductosServiceDELETE> eliminarProducto(String productoId);
-	public ResponseEntity<RespuestaProductosServicePUT> actualizarProducto(Producto producto);
+	public ResponseEntity<RespuestaProductosServicePUT> actualizarProducto(String id, Producto producto);
 	public ResponseEntity<RespuestaProductosServicePOST> crearProducto(Producto producto);
 	public ResponseEntity<RespuestaProductosServicePOST> crearProductoLista(List<Producto> producto);
 }

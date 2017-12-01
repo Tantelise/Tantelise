@@ -62,7 +62,7 @@ public class ProductosServiceImpl implements ProductosService{
 	}
 
 	@Override
-	public ResponseEntity<RespuestaProductosServicePUT> actualizarProducto(Producto producto) {
+	public ResponseEntity<RespuestaProductosServicePUT> actualizarProducto(String id,Producto producto) {
 		RespuestaProductosServicePUT body = new RespuestaProductosServicePUT();
 		body.setIdentificador(producto.getId());
 		body.setActualizado(false);

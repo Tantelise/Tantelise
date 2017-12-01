@@ -59,7 +59,7 @@ public class DetalleAdicionalServiceImpl implements DetalleAdicionalService{
 	}
 
 	@Override
-	public ResponseEntity<RespuestaDetalleAdicionalServicePUT> actualizarDetalleAdicional(
+	public ResponseEntity<RespuestaDetalleAdicionalServicePUT> actualizarDetalleAdicional(String id,
 			DetalleAdicional detalleAdicional) {
 		RespuestaDetalleAdicionalServicePUT body = new RespuestaDetalleAdicionalServicePUT();
 		body.setIdentificador(detalleAdicional.getId());

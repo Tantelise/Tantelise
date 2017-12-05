@@ -7,7 +7,7 @@ spring:
   application:
     name: Tantelise-productosService
 server:
-  port: 8989
+  port: 0
 eureka:
   client:
     fetch-registry: true
@@ -30,7 +30,8 @@ signing:
   
 logging:
   level:
-    root: INFO
+    root: ERROR
+    org.springframework: ERROR
     cl.dramos:  TRACE
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

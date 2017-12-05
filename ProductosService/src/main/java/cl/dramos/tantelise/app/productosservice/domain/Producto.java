@@ -140,4 +140,27 @@ public class Producto {
 		this.estado = estado;
 	}
 
+	public Producto(String id, String nombreProducto, String descripcion, String unidadVenta, float precioUnidad,
+			String categoriaProducto, Torta torta, List<Imagen> imagen, String fechaIngreso,
+			String fechaUltimaModificacion, String estado) {
+		super();
+		this.id = id;
+		this.nombreProducto = nombreProducto;
+		this.descripcion = descripcion;
+		this.unidadVenta = unidadVenta;
+		this.precioUnidad = precioUnidad;
+		this.categoriaProducto = categoriaProducto;
+		this.torta = torta;
+		this.imagen = imagen;
+		this.fechaIngreso = fechaIngreso;
+		this.fechaUltimaModificacion = fechaUltimaModificacion;
+		this.estado = estado;
+	}
+
+	public Producto() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
 }

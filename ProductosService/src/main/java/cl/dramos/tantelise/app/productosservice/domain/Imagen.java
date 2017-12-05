@@ -1,9 +1,14 @@
 package cl.dramos.tantelise.app.productosservice.domain;
 
+import org.springframework.data.annotation.Id;
+
 import io.swagger.annotations.ApiModelProperty;
 
 public class Imagen {
 
+	@Id
+	private String id;
+	
     @ApiModelProperty(notes = "URI de la imágen correspondiente")
 	private String ruta;
     @ApiModelProperty(notes = "Nombre de la imágen")

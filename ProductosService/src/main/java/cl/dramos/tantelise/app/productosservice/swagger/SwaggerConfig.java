@@ -29,7 +29,8 @@ public class SwaggerConfig {
     }
     
     private ApiInfo metaData() {
-        ApiInfo apiInfo = new ApiInfo(
+        @SuppressWarnings("rawtypes")
+		ApiInfo apiInfo = new ApiInfo(
                 "Api de productos",
                 "Api de productos para tienda Tantelise",
                 "1.0",

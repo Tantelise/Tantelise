@@ -32,3 +32,5 @@ eureka:
   instance:
     statusPageUrlPath: /swagger-ui.html
   
+signing:
+  key: asda1231LO

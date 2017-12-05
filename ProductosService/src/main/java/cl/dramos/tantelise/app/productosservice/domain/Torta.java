@@ -31,6 +31,15 @@ public class Torta {
 	public void setDetalleAdicional(List<DetalleAdicional> detalleAdicional) {
 		this.detalleAdicional = detalleAdicional;
 	}
+	public Torta(String tipoTorta, List<DetallePersonas> detallePersonas, List<DetalleAdicional> detalleAdicional) {
+		super();
+		this.tipoTorta = tipoTorta;
+		this.detallePersonas = detallePersonas;
+		this.detalleAdicional = detalleAdicional;
+	}
+	public Torta() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 

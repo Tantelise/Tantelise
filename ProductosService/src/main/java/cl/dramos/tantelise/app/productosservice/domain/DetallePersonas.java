@@ -30,5 +30,7 @@ public class DetallePersonas {
 	public void setPrecioCantidad(float precioCantidad) {
 		this.precioCantidad = precioCantidad;
 	}
+	
+	
 
 }

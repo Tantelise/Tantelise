@@ -33,5 +33,7 @@
 			<module>UsuariosService</module>
 			<module>RegistryService</module>
 			<module>ServiciosService</module>
+			<module>DiscoveryServer</module>
+			<module>clientesService</module>
 		</modules>
 </project>

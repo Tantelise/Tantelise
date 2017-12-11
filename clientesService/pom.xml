@@ -5,9 +5,11 @@
     <artifactId>TanteliseApp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>ServiciosService</artifactId>
+  <groupId>cl.tantelise.crm</groupId>
+  <artifactId>clientesService</artifactId>
   
-  <!-- Springboot, se le excluye el tomcat que viene por defecto -->
+  
+  	<!-- Springboot, se le excluye el tomcat que viene por defecto -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -90,7 +92,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>Tantelise-ServiciosService</finalName>
+		<finalName>Tantelise-ProductosService</finalName>
 	</build>
-	<groupId>cl.tantelise.servicios</groupId>
 </project>

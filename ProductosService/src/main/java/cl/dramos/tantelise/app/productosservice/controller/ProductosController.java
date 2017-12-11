@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @RequestMapping(path = "productos",produces = "application/json")
-@Api(value="Productos API", description="Operaciones relacionadas a los productos")
+@Api(value="Productos API")
 public class ProductosController {
 	
 	@Autowired

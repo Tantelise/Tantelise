@@ -22,15 +22,12 @@ security:
   oauth2:
     resource:
       user-info-uri: http://localhost:8081/usuarios/info
-      prefer-token-info: true  
-    
+      prefer-token-info: true
 signing:
   key: asda1231LO
-  
-  
 logging:
   level:
     root: INFO
-    cl.dramos:  TRACE
+    cl.dramos: TRACE
   pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    console: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'

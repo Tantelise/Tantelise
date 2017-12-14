@@ -19,5 +19,4 @@ public class ProductosServiceMain {
 		log.trace("Iniciando aplicación");
 
 	}
-
 }

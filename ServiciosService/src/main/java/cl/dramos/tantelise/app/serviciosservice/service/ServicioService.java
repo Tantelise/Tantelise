@@ -11,13 +11,10 @@ import cl.dramos.tantelise.app.serviciosservice.domain.respuestas.RespuestaServi
 public interface ServicioService {
 
 	public ResponseEntity<RespuestaServiciosGET> obtenerServicios();
-
 	public ResponseEntity<RespuestaServiciosGET> obtenerServicioPorId(String id);
-
 	public ResponseEntity<RespuestaServiciosPOST> crearServicio(Servicio servicio);
-
 	public ResponseEntity<RespuestaServiciosPUT> actualizarServicio(Servicio servicio);
-
 	public ResponseEntity<RespuestaServiciosDELETE> eliminarServicioPorId(String id);
-
 }
+
+

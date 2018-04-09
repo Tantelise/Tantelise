@@ -34,8 +34,6 @@ import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaProdu
 import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaProductosServiceGET;
 import cl.dramos.tantelise.app.productosservice.domain.respuestas.RespuestaProductosServicePOST;
 
-
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ProductosTest {

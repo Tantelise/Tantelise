@@ -1,0 +1,13 @@
+server:
+  port: 8080
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: "localhost"
+    appname: "Tantelise-Eureka-Server"
+logging:
+  level:
+    com.netflix.eureka: false
+    logging.level.com.netflix.discovery: false
